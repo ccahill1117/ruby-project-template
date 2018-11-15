@@ -8,7 +8,7 @@ if project_directory
     puts "are you sure you want to delete #{project_directory}? Press 'y' to delete"
     user_response = gets.chomp
     if user_response == "y"
-      FileUtils.rmdir("./#{project_directory}")
+      FileUtils.rm_rf("./#{project_directory}")
     else
       puts "#{project_directory} has not been deleted"
     end
